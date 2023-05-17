@@ -1,11 +1,17 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  padding: 5px 5px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .header__nav {
   display: flex;
   justify-content: flex-end;
+  padding: 15px;
+  align-items: baseline;
 }
 .header__nav--a1 img {
   height: 35px;
@@ -15,11 +21,10 @@
   height: 35px;
   color: black;
   text-decoration: none;
-  align-self: center;
+
+  margin: 15px;
 }
-.main {
-  margin-top: 260px;
-}
+
 .main__nav--ul {
   display: flex;
   flex-direction: row;
@@ -45,6 +50,9 @@ li a {
 .main__nav--ul a:hover img {
   transform: translateY(-5px);
 }
+.container {
+  margin: auto;
+}
 .ancestor {
   display: flex;
   flex-direction: row;
@@ -52,22 +60,87 @@ li a {
 }
 .ancestor__container {
   width: 600px;
-  border: 1px solid #fc0;
   display: flex;
   justify-content: space-between;
+  border-radius: 15px;
+  background-color: #ffcc00;
+  padding: 2px;
 }
-.ancestor__container--search {
-  width: 6000px;
-  height: 56px;
+.ancestor__img {
+  margin-right: 8px;
+}
+.input-wrapper {
+  background-color: white;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0 8px;
 }
+
 input {
   width: 100%;
+  border-radius: 15px;
   outline: none;
   border: none;
 }
 .ancestor__container--right {
   display: flex;
   align-items: center;
+}
+button {
+  height: 100%;
+  font-weight: 400;
+  background-color: #fc0;
+  cursor: pointer;
+  text-align: center;
+  overflow: visible;
+  border-top-right-radius: 0.625rem 0.375rem 0.375rem 0.625rem;
+  border-bottom-right-radius: 0.625rem 0.375rem 0.375rem 0.625rem;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #fc0;
+  border-radius: 15px;
+}
+.ancestor__container--right a {
+  overflow: visible;
+  padding: 15px;
+
+  border-color: #fc0;
+  border-radius: 15px;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  border-right: 2px #fc0 solid;
+  border-left: 1px white solid;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
+.coun {
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: red;
+}
+.footer__countries {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.footer__about {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  color: black;
+  opacity: 0.7;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
